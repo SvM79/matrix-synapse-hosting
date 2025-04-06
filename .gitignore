@@ -172,3 +172,27 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Matrix Synapse
+homeserver.yaml
+homeserver.signing.key
+*.log
+*.pid
+*.db
+*.db-shm
+*.db-wal
+*.pem
+
+# Docker
+.env
+docker-compose.override.yml
+*.sock
+
+# Synology
+@eaDir/
+Thumbs.db
+
+# VS Code
+.vscode/
+*.code-workspace
+
