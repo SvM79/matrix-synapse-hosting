@@ -1,0 +1,27 @@
+# Matrix Synapse – Redacted Template Configuration
+# This is a stripped-down homeserver.yaml intended for documentation and onboarding.
+# Replace values and consult the official Synapse docs for full config options.
+
+server_name: "your.domain.tld"
+report_stats: false
+
+pid_file: /data/homeserver.pid
+
+listeners:
+  - port: 8008
+    type: http
+    tls: false
+    resources:
+      - names: [client, federation]
+
+database:
+  name: sqlite3
+  args:
+    database: /data/homeserver.db
+
+log_config: /data/yourdomain.log.config
+
+# Federation hardening
+federation_domain_whitelist: []
+trusted_key_servers:
+  - server_name: "matrix.org"
