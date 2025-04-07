@@ -43,6 +43,10 @@ This project uses a structured Git-based deployment model involving three enviro
 
 ---
 
+🛡️ See [Hardening Checklist](hardening-checklist.md) for applied and planned security practices.
+
+---
+
 ## 📄 License
 
 This project is licensed under the [Apache License 2.0](LICENSE), matching the Matrix Synapse project's license.
